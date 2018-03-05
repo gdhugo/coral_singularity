@@ -62,11 +62,11 @@ From: nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
   ./Anaconda3-5.1.0-Linux-x86_64.sh -b -p $CONDA_INSTALL_PATH
 
   # make and install conda environment
-  #conda create -n coral pip python=3.6
-  #source activate coral
+  conda create -n coral python=3.6
+  source activate coral
 
   # standard modules
-  conda install -y maplotlib
+  conda install -y matplotlib
   conda install -y pytest h5py hdf5 graphviz pydot # for keras
 
   # tensorflow
