@@ -71,10 +71,10 @@ From: nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
   conda install -y pytest h5py hdf5 graphviz pydot # for keras
 
   # tensorflow
-  sudo pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp36-cp36m-linux_x86_64.whl
+  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp36-cp36m-linux_x86_64.whl
 
   # keras
-  sudo pip install keras
+  pip install --ignore-installed --upgrade keras
 
   # TODO
   # SimpleElastix
