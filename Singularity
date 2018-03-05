@@ -62,18 +62,18 @@ From: nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
   ./Anaconda3-5.1.0-Linux-x86_64.sh -b -p $CONDA_INSTALL_PATH
 
   # make and install conda environment
-  conda create -n coral pip python=3.6
-  source activate coral
+  #conda create -n coral pip python=3.6
+  #source activate coral
 
   # standard modules
-  conda install -n coral -y maplotlib
-  conda install -n coral -y pytest h5py hdf5 graphviz pydot # for keras
+  conda install -y maplotlib
+  conda install -y pytest h5py hdf5 graphviz pydot # for keras
 
   # tensorflow
   sudo pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp36-cp36m-linux_x86_64.whl
 
   # keras
-  sudo pip install keras 
+  sudo pip install keras
 
   # TODO
   # SimpleElastix
