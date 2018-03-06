@@ -1,5 +1,8 @@
 Bootstrap: docker
-From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+From: nvidia/cuda:@sha256:5920b8455c2467aa0122f389278d201dfd6e0a27
+# the above is cuda 9.0, cudnn7.0.5, ubuntu 16.04
+
+#nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04:
 
 # adapted from: https://github.com/marcc-hpc/anaconda-cuda
 
