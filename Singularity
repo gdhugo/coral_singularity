@@ -71,7 +71,7 @@ From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
   conda install -y pytest h5py hdf5 graphviz pydot # for keras
 
   # tensorflow
-  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.5.0-cp36-cp36m-linux_x86_64.whl
+  pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.6.0-cp36-cp36m-linux_x86_64.whl
 
   # keras
   pip install --ignore-installed --upgrade keras
