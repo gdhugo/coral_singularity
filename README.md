@@ -5,9 +5,8 @@ Singularity image for the CORAL group at Washington University School of Medicin
 
 To run on the CHPC cluster:
 
-1. Login and then load all required modules
+1. Login and then load singularity. No need to load cuda as only the driver is required on the host. Cuda will be installed in the singularity image. This is nice, because then we can install any cuda version we need (as long as it is compatible with the driver), and it will work.
 ```
-load cuda-9.1
 load singularity
 ```
 
@@ -16,7 +15,7 @@ load singularity
 singularity pull shub://gdhugo/coral_singularity
 ```
 
-3. Invoke with GPU tools:
+3. Invoke with GPU tools (--nv switch):
 ```
 singularity shell --nv gdhugo-coral_singularity-master-latest.simg
 ```
