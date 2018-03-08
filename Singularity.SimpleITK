@@ -38,14 +38,19 @@ From: tensorflow/tensorflow:1.6.0-gpu-py3
   pip3 install --upgrade pip
   pip3 install keras
 
-  # SimpleElastix
-  git clone https://github.com/SuperElastix/SimpleElastix
-  mkdir SimpleElastix.build
-  cd SimpleElastix.build
-  cmake ../SimpleElastix/SuperBuild
-  make
-  cd SimpleITK-build/Wrapping/Python/Packaging
-  python setup.py install
+  # SimpleITK
+  pip3 install --upgrade simpleitk 
+
+  # TODO: SimpleElastix
+  # git clone https://github.com/SuperElastix/SimpleElastix
+  # mkdir SimpleElastix.build
+  # cd SimpleElastix.build
+  # #cmake ../SimpleElastix/SuperBuild
+  # cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF ../SimpleElastix/SuperBuild
+  # #make
+  # make >/dev/null --jobs=4
+  # cd SimpleITK-build/Wrapping/Python/Packaging
+  # python setup.py --upgrade install
 
 %runscript
   # executes with the singularity run command
