@@ -27,8 +27,8 @@ From: tensorflow/tensorflow:1.6.0-gpu-py3
   # default mount paths
   mkdir /scratch
 
-  # keras - still use standalone keras, rather than tf.keras 
-  pip install --ignore-installed --upgrade keras
+  # keras - still use standalone keras, rather than tf.keras
+  pip3 install keras
 
   # TODO
   # SimpleElastix
