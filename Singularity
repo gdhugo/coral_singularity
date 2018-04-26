@@ -27,6 +27,9 @@ From: tensorflow/tensorflow:1.6.0-gpu-py3
   # default mount paths
   mkdir /scratch
 
+  # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
+  touch /usr/bin/nvidia-smi
+
   # keras - still use standalone keras, rather than tf.keras
 
   apt-get update && apt-get -y install locales
