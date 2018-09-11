@@ -42,7 +42,7 @@ From: tensorflow/tensorflow:1.6.0-gpu-py3
   pip3 install keras
 
   # scikit, scipy
-  pip3 install --upgrade scipy scikit-learn
+  pip3 install --upgrade scipy scikit-learn scikit-image
 
   # SimpleITK
   pip3 install --upgrade simpleitk
