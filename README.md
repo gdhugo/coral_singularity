@@ -15,6 +15,11 @@ load singularity
 singularity pull shub://gdhugo/coral_singularity
 ```
 
+If you want to pull a specific image:
+```
+singularity pull shub://gdhugo/coral_singularity:scikit
+```
+
 3. Invoke with GPU tools (--nv switch):
 ```
 singularity shell --nv gdhugo-coral_singularity-master-latest.simg
