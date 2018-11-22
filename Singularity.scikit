@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:1.12.0-gpu-py3
+From: tensorflow/tensorflow:1.9.0-gpu-py3
 
 # adapted from: https://github.com/marcc-hpc/tensorflow
 
