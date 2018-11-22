@@ -38,8 +38,8 @@ From: tensorflow/tensorflow:1.12.0-gpu-py3
   apt-get clean
 
   # apt-get install -y libcupti-dev
-  pip3 install --upgrade
-  pip3 install keras
+  # pip3 install --upgrade
+  # pip3 install keras
 
 %runscript
   # executes with the singularity run command
