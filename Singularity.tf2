@@ -31,8 +31,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
   touch /usr/bin/nvidia-smi
 
-  # keras - still use standalone keras, rather than tf.keras
-
   apt-get update && apt-get -y install locales
   locale-gen en_US.UTF-8
   apt-get install -y git wget
@@ -44,10 +42,10 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # pip3 install keras
 
   # scikit, scipy
-  # pip3 install --upgrade scipy scikit-learn scikit-image
+  pip3 install scipy scikit-learn scikit-image
 
   # SimpleITK
-  pip3 install --upgrade simpleitk
+  pip3 install  simpleitk
 
   # TODO: SimpleElastix
   # git clone https://github.com/SuperElastix/SimpleElastix
