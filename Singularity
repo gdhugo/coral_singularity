@@ -39,6 +39,9 @@ From: tensorflow/tensorflow:1.12.0-gpu-py3
   # python3-dev python3-pip python3-tk
   apt-get clean
 
+  # pandas
+  apt-get install python3-pandas
+
   # apt-get install -y libcupti-dev
   # pip3 install --upgrade
   # pip3 install keras

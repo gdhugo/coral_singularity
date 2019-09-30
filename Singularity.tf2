@@ -44,7 +44,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # pandas
   apt-get install python3-pandas
   
-
   # SimpleITK
   pip install simpleitk
 
