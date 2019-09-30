@@ -7,6 +7,7 @@ From: tensorflow/tensorflow:1.12.0-gpu-py3
   # use bash as default shell
   SHELL=/bin/bash
   export SHELL
+  export HDF5_USE_FILE_LOCKING='FALSE'
 
 %setup
   # runs on host

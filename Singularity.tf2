@@ -41,6 +41,9 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y python3-scipy
   # pip3 install scipy scikit-learn scikit-image
 
+  # pandas
+  apt-get install python3-pandas
+
   # SimpleITK
   pip install simpleitk
 
