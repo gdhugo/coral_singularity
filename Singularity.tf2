@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:2.0.0a0-gpu-py3
+From: tensorflow/tensorflow:2.0.0-gpu-py3
 
 # adapted from: https://github.com/marcc-hpc/tensorflow
 
@@ -42,9 +42,11 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # pip3 install scipy scikit-learn scikit-image
 
   # pandas
+  apt-get update
+  apt-get install build-essential
+  apt-get install libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
   apt-get install python3-pandas
 
-  
   # SimpleITK
   pip install simpleitk
 
