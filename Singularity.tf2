@@ -45,7 +45,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get update
   apt-get install build-essential
   # apt-get install libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
-  apt-get install python3-pandas
+  # apt-get install python3-pandas
 
   # SimpleITK
   pip install simpleitk
