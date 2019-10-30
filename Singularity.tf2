@@ -41,6 +41,9 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y python3-scipy
   # pip3 install scipy scikit-learn scikit-image
 
+  # tf addons
+  pip install tensorflow_addons
+
   # pandas
   apt-get update
   apt-get install build-essential
