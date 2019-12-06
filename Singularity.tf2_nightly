@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:nightly-gpu-py3-jupyter
+From: tensorflow/tensorflow:nightly-gpu-py3
 # adapted from: https://github.com/marcc-hpc/tensorflow
 
 %environment
@@ -7,6 +7,7 @@ From: tensorflow/tensorflow:nightly-gpu-py3-jupyter
   SHELL=/bin/bash
   export SHELL
   export HDF5_USE_FILE_LOCKING='FALSE'
+  alias ll="ls -al"
 
 %setup
   # runs on host
